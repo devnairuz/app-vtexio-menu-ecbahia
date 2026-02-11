@@ -1,0 +1,181 @@
+.menuContainerNav {
+  position: relative;
+}
+
+.menuContainer {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  padding-block: 18px;
+  transition: .3s;
+}
+
+.menuItem:hover {
+  box-shadow: 0px -2px 0px 0px #DA251D inset;
+}
+
+.menuItem .styledLink {
+  font-size: 14px;
+  line-height: 21px;
+  color: #202945;
+  text-decoration: none;
+}
+
+.menuItem .styledLinkText {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* .menuItem .styledLinkText::after {
+  display: inline-block;
+  content: "";
+  background-image: url(https://fortalezafc.vtexassets.com/assets/vtex/assets-builder/cbv.store-theme/1.0.0/emojis/emoji-categories___35ec057055939949e4440c895aa3c400.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right: 0;
+} */
+
+.submenuContainer {
+  width: 100vw;
+  margin-left: calc(-50vw + 65%);
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+}
+
+.submenuList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submenuItems {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  padding-block: 40px;
+}
+
+.imgCategory {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+}
+
+.collapsibleHeaderText {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #DA251D;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.collapsibleHeaderText:hover {
+  text-decoration: underline;
+}
+
+.submenuItem .styledLink {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  color: #696969;
+  margin-bottom: .5rem;
+  text-decoration: none;
+}
+
+.submenuItem .styledLink:hover {
+  text-decoration: underline;
+}
+
+.goBackButton,
+.triggerContainer {
+  border: none;
+  background: transparent;
+  outline: transparent;
+}
+
+.hideArrow svg {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menuItemVertical {
+    border: none;
+    border-bottom: 1px solid #EEEEEE;
+    padding-block: 1rem;
+  }
+
+  .styledLinkContainer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .styledLinkContainer .styledLink {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .styledLinkContainer .styledLinkText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .styledLinkContainer .styledLinkText .level1Title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #000066;
+  }
+
+  /* .styledLinkContainer .styledLinkText .level1Title::after {
+    display: inline-block;
+    content: "";
+    background-image: url(https://fortalezafc.vtexassets.com/assets/vtex/assets-builder/cbv.store-theme/1.0.0/emojis/emoji-categories___35ec057055939949e4440c895aa3c400.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 0;
+  } */
+
+  .submenuItems {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .allThisCategory {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #696969;
+    text-decoration: none;
+    padding-block: 1rem;
+  }
+
+  .collapsibleHeaderText {
+    color: #E42313;
+    margin-bottom: 0;
+  }
+}

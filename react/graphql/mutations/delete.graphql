@@ -1,0 +1,41 @@
+mutation delete($id: String, $idSecond: String, $idThird: String) {
+  deleteMenu(id: $id, idSecond: $idSecond, idThird: $idThird) {
+    id
+    name
+    icon
+    slug
+    styles
+    display
+    enableSty
+    order
+    slugRoot
+    slugRelative
+    mobile
+    menu {
+      id
+      name
+      icon
+      slug
+      styles
+      display
+      enableSty
+      order
+      slugRoot
+      slugRelative
+      mobile
+      menu {
+        id
+        name
+        icon
+        slug
+        styles
+        display
+        enableSty
+        order
+        slugRoot
+        slugRelative
+        mobile
+      }
+    }
+  }
+}

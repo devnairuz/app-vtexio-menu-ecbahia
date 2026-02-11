@@ -1,0 +1,23 @@
+type Query {
+  menus(isMobile: Boolean): [Menu]
+  @auth(scope: PUBLIC)
+  menu(id: ID!): Menu
+  @auth(scope: PUBLIC)
+  settings: [Settings]
+  @auth(scope: PUBLIC)
+  setting(id: ID!): Settings
+  @auth(scope: PUBLIC)
+}
+
+type Mutation {
+  editMenu(menuInput: MenuInput!): [Menu]
+  @auth(scope: PUBLIC)
+  deleteMenu(id: String, idSecond: String, idThird: String): [Menu]
+  @auth(scope: PUBLIC)
+  createMenu(menuInput: MenuInput!): Menu
+  @auth(scope: PUBLIC)
+  uploadMenu(menuData: [MenuInput]): [Menu]
+  @auth(scope: PUBLIC)
+  createEditSettings(settingsInput: SettingsInput!): Settings
+  @auth(scope: PUBLIC)
+}

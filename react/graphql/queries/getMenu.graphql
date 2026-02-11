@@ -1,0 +1,43 @@
+query getMenu($id: ID!) {
+  menu(id: $id) {
+    id
+    name
+    icon
+    slug
+    imgCategory
+    styles
+    display
+    enableSty
+    order
+    mobile
+    desktop
+    menu {
+      id
+      name
+      icon
+      slug
+      styles
+      display
+      enableSty
+      order
+      slugRoot
+      slugRelative
+      mobile
+      desktop
+      menu {
+        id
+        name
+        icon
+        slug
+        styles
+        display
+        enableSty
+        order
+        slugRoot
+        slugRelative
+        mobile
+        desktop
+      }
+    }
+  }
+}

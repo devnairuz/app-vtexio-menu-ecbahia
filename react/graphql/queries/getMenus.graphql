@@ -1,0 +1,45 @@
+query getMenus($isMobile: Boolean) {
+  menus(isMobile: $isMobile) {
+    id
+    name
+    icon
+    slug
+    imgCategory
+    styles
+    display
+    enableSty
+    order
+    slugRoot
+    slugRelative
+    menu {
+      id
+      name
+      icon
+      slug
+      styles
+      display
+      enableSty
+      order
+      slugRoot
+      slugRelative
+      mobile
+      desktop
+      menu {
+        id
+        name
+        icon
+        slug
+        styles
+        display
+        enableSty
+        order
+        slugRoot
+        slugRelative
+        mobile
+        desktop
+      }
+    }
+    mobile
+    desktop
+  }
+}

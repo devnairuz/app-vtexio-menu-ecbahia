@@ -1,0 +1,12 @@
+.tooltipDownload:hover .tooltiptext {
+  display: block;
+}
+
+.tooltiptext {
+  display: none;
+  text-transform: lowercase;
+}
+
+#upload:hover svg g {
+  fill: #dce8f7 !important;
+}
