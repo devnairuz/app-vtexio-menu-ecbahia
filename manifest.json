@@ -40,6 +40,12 @@
     },
     {
       "name": "vbase-read-write"
+    },
+    {
+      "name": "STORE_DS"
+    },
+    {
+      "name": "ADMIN_DS"
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
